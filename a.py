@@ -1,9 +1,15 @@
-s=list(input("Enter the names with commas:").split(","))
-for i in s:
-	f=" "
-	a=i.split(" ")
-	for j in a:
-		f+=j[0]
-
-	print(f)
-
+print("Enter the number")
+n=int(input())
+num1=0
+num2=1
+print("The fibonacci series is")
+sum=0
+print(sum)
+for i in range(1,n):
+	if i==1:
+		print(i)
+	else:
+		sum=num1+num2
+		num1=num2
+		num2=sum
+		print(sum)
